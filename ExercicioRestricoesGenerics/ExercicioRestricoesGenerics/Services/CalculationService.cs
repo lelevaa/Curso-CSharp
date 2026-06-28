@@ -7,7 +7,7 @@ namespace ExercicioRestricoesGenerics.Services
     class CalculationService
     {
         //lista pode ser de um T qualquer, desde que seja um T comparavel
-        public T Max<T>(List<T> list) where T: IComparable
+        public T Max<T>(List<T> list) where T: IComparable //pode sert struct, class...
         {
             if(list.Count == 0)
             {
